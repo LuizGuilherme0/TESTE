@@ -23,7 +23,7 @@ namespace Geometria
             } else if (tipo == "i"){
                 resultado =2;
             }else{
-                resultado =0;
+                resultado =1;
             }
             return resultado;
 
