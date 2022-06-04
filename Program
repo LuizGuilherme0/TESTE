@@ -1,0 +1,32 @@
+using System;
+using Geometria;
+
+namespace Geometria
+{
+   class program
+   {
+       static void Main(string[] args)
+       {
+           Console.WriteLine("Calculando Areas");
+
+           Console.WriteLine("Digite a base: ");
+           double b = Convert.ToDouble(Console.ReadLine());
+
+           Console.WriteLine("Digite a altura: ");
+           double a = Convert.ToDouble(Console.ReadLine());
+
+           GeometriaArea geo = new GeometriaArea() ;
+           double resultado = geo.CalcularAreaRetangulo(b,a);
+
+
+            Console.WriteLine($"O resultado da Area Do Retangulo é: {resultado}");
+
+            Console.WriteLine("Calculando Triangulo");
+            resultado = geo.CalcularAreaTriangulo(2,3,4,"r");
+            Console.WriteLine($"O resultado da area Do Triangulo é: {resultado}");
+
+       }
+
+   }
+
+}
