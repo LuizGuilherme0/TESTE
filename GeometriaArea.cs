@@ -17,7 +17,7 @@ namespace Geometria
         public double CalcularAreaTriangulo(double a,double b,double c ,string tipo) {
            double resultado ;
            if (tipo == "r") {
-              resultado = (a* b)/2;
+              resultado = (a *b)/2;
             } else if (tipo == "e"){
               resultado =(b *b* Math.Sqrt(3))/4;
             } else if (tipo == "i"){
